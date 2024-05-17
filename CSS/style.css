@@ -178,6 +178,154 @@ body {
     margin: 0 auto;
 }
 
+.result-val p {
+    display: grid;
+}
+
 footer p {
     color: black;
+}
+
+@media only screen and (min-width: 401) and (max-width: 700px) {
+    .container {
+        padding-left: 100px;
+    }
+    .box {
+        height: 650px;
+        width: 400px;
+        margin: 0;
+    }
+
+    .box .age {
+        height: 100px;
+        width: 380px;
+        margin: 0 auto 10px;
+    }
+    
+    .box .age input {
+        width: 150px;
+    }
+    
+    .box .gender {
+        height: 50px;
+        width: 380px;
+        margin: 0 auto 10px;
+    }
+    
+    .box .values {
+        display: flex;
+        width: 410px;
+        margin: 0 0 0 12px;
+    }
+    
+    .values .height {
+        height: 100px;
+        width: 180px;
+    }
+    
+    .values .weight {
+        height: 100px;
+        width: 180px;
+    }
+    
+    .values .height input {
+        width: 90px;
+    }
+    
+    .values .weight input {
+        width: 90px;
+    }
+
+    .btn .calculate {
+        height: 50px;
+        width: 300px;
+        margin: 0 0 10px;
+    }
+    
+    .btn .reset {
+        height: 50px;
+        width: 80px;
+        margin: 0 0 10px;
+    }
+
+    .results-sec .result {
+        height: 40px;
+    }
+    
+    .result-val {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        padding-left: 100px;
+    }
+    .box {
+        height: 650px;
+        width: 400px;
+        margin: 0;
+    }
+
+    .box .age {
+        height: 100px;
+        width: 380px;
+        margin: 0 auto 10px;
+    }
+    
+    .box .age input {
+        width: 150px;
+    }
+    
+    .box .gender {
+        height: 50px;
+        width: 380px;
+        margin: 0 auto 10px;
+    }
+    
+    .box .values {
+        display: flex;
+        width: 410px;
+        margin: 0 0 0 12px;
+    }
+    
+    .values .height {
+        height: 100px;
+        width: 180px;
+    }
+    
+    .values .weight {
+        height: 100px;
+        width: 180px;
+    }
+    
+    .values .height input {
+        width: 90px;
+    }
+    
+    .values .weight input {
+        width: 90px;
+    }
+
+    .btn .calculate {
+        height: 50px;
+        width: 300px;
+        margin: 0 0 10px;
+    }
+    
+    .btn .reset {
+        height: 50px;
+        width: 80px;
+        margin: 0 0 10px;
+    }
+
+    .results-sec .result {
+        height: 40px;
+    }
+    
+    .result-val {
+        width: 400px;
+        margin: 0 auto;
+    }
 }
