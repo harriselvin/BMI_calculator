@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./Script/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="title">
+                <h2>BMI Calculator</h2>
+            </div>
+            <div class="age">
+                <p>Age</p>
+                <input type="text" required>
+            </div>
+            <div class="gender">
+                <div class="male">
+                    <input type="radio" id="male" name="gender" required>
+                    <label for="male">Male</label>
+                </div>
+                <div class="female">
+                    <input type="radio" id="female" name="gender" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="values">
+                <div class="height">
+                    <p>Height(cm)</p>
+                    <input type="text" required>
+                </div>
+                <div class="weight">
+                    <p>weight(kg)</p>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="calculate">Calculate BMI</button>
+                <button class="reset">Reset</button>
+            </div>
+            <div class="results-sec">
+                <div class="result-name">
+                    <p>Your BMI is</p>
+                </div>
+                <div class="result">
+                    <span data-result>00.00</span>
+                </div>
+            </div>
+            <div class="result-val">
+                <p>You are <span data-value></span></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            &copy; 2024 Elvin Harris | All Rights Reserved
+        </p>
+    </footer>
+</body>
+</html>
