@@ -5,6 +5,7 @@ let calculate = document.getElementsByClassName('calculate')[0]
 let reset = document.getElementsByClassName('reset')[0]
 let display = document.querySelector('[data-result]')
 let health = document.querySelector('[data-value]')
+let mes = document.querySelectorAll('span')[1]
 let message = document.querySelectorAll('p')[4]
 
 let male = document.querySelectorAll("input")[1]
@@ -17,6 +18,7 @@ function Calculation(){
     let round = Math.round(result * 100) / 100 
     display.innerText = round
     console.log(result);
+    
 
     categoryNum()
 }
@@ -29,7 +31,7 @@ function Reset() {
     weight.value = ""
     display.innerText = "00.00"
     health.innerText = ""
-    message.style.display = "block"
+    mes.style.display = "block"
 
     for(let i = 0; i < male.length; i++) {
         if (male[i].type == 'radio') {
@@ -50,7 +52,7 @@ function categoryNum() {
     } else if (display.innerText >= 40.0) {
         health.innerText = "Obese"
     } else {
-        message.innerText = "Please enter height and weight"
+        health.innerHTML = "Please enter height and weight", mes.style.display = "none"
     }
 }
 
